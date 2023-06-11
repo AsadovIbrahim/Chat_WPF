@@ -1,0 +1,101 @@
+﻿<Window x:Class="Chat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="380" Background="#1b202d">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="1.4*"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <WrapPanel>
+                <Border Width="40" Height="40" Margin="10" CornerRadius="20">
+                    <Border.Clip>
+                        <EllipseGeometry Center="20,20" RadiusX="20" RadiusY="20" />
+                    </Border.Clip>
+                    <Image Source="https://www.artmajeur.com/medias/standard/k/r/kristinamaslakova/artwork/15648913_muzskoj-portret2020-licevoj.jpg"/>
+                </Border>
+                <TextBlock Text="Danny Hopkins" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="#fff" FontWeight="Medium"/>
+                <Image Source="images\searchbtn.png" Width="20" Margin="150,0,0,0"/>
+            </WrapPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <TextBlock Text="1  FEB 12:00" FontWeight="Normal" Foreground="#fff" TextAlignment="Center" Padding="15"/>
+        </Grid>
+       
+        <ListBox Grid.Row="1" Background="Transparent" BorderBrush="Transparent">
+            <ListBoxItem Margin="0,35,0,0">
+                <StackPanel>
+                    <Border Width="300" Height="70" CornerRadius="20" Background="#373e4e">
+                        <TextBlock Foreground="#fff" Padding="15" FontSize="14" Text="I commented on Figma, I want to add some fancy icons. Do you have any icon set?" TextWrapping="Wrap" />
+                    </Border>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Margin="0,20,0,0" HorizontalAlignment="Right">
+                <StackPanel>
+                    <Border Width="300" Height="70" CornerRadius="20" Background="#7a8194">
+                        <TextBlock TextAlignment="Right" Foreground="#fff" Padding="15" FontSize="14" Text="I am in a process of designing same.When do you need them?" TextWrapping="Wrap" />
+                    </Border>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Margin="0,20,0,0" HorizontalAlignment="left">
+                <StackPanel>
+                    <Border Width="150" Height="50" CornerRadius="20" Background="#373e4e">
+                        <TextBlock Foreground="#fff" Padding="15" FontSize="14" Text="Next month?" TextWrapping="Wrap" />
+                    </Border>
+                </StackPanel>
+
+            </ListBoxItem>
+            <ListBoxItem HorizontalAlignment="Center">
+                <StackPanel>
+                        <TextBlock Foreground="#fff" Padding="15" FontSize="14" Text="08:12" TextWrapping="Wrap" />
+                </StackPanel>
+
+            </ListBoxItem>
+
+            <ListBoxItem  HorizontalAlignment="Right">
+                <StackPanel>
+                    <Border Width="350" Height="80" CornerRadius="20" Background="#7a8194">
+                        <TextBlock Foreground="#fff" Padding="15" FontSize="14" Text="I am almost finish.Please give me your email,I will ZIP them and send you as soon as am finish." TextWrapping="Wrap" />
+                    </Border>
+                </StackPanel>
+
+            </ListBoxItem>
+            <ListBoxItem HorizontalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Foreground="#fff" Padding="15" FontSize="14" Text="08:43" TextWrapping="Wrap" />
+                </StackPanel>
+
+            </ListBoxItem>
+            <ListBoxItem  HorizontalAlignment="Left">
+                <StackPanel>
+                    <Border Width="220" Height="50" CornerRadius="20" Background="#373e4e">
+                        <TextBlock Foreground="#fff" TextDecorations="Underline" Padding="15" FontSize="14" Text="maciej.kowalski@email.com" TextWrapping="Wrap" />
+                    </Border>
+                </StackPanel>
+
+            </ListBoxItem>
+        </ListBox>
+        <Grid Grid.Row="2">
+            <Border Width="320" Background="#3d4354" Margin="10" CornerRadius="25">
+                <WrapPanel>
+                    <Border CornerRadius="50" Margin="6,6,0,0" Width="35" Height="32" Background="#9398a7">
+                        <Image Source="images\camera.png" Width="18"/>
+                    </Border>
+                    <Image Source="images\send.png" Margin="240,0,0,0" Width="30"/>
+                </WrapPanel>
+                
+            </Border>
+         
+        </Grid>
+
+
+    </Grid>
+</Window>
